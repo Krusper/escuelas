@@ -1,5 +1,5 @@
 import React from 'react'
-import login from '../themes/login.css'
+import '../themes/login.css'
 import Loguee from '../components/loguee'
 
 function Login(){
@@ -8,8 +8,8 @@ function Login(){
     {
         <div className='App'>
             <div className='body'>
-                <section>
-                    <div></div>
+                <section className='seccion-inicio'>
+                  <div></div>
                     <div className='component-loguee'><Loguee></Loguee></div>
                 </section>
             </div>
