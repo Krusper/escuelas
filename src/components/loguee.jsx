@@ -1,27 +1,34 @@
-import React, {useState} from 'react'
-import '../themes/loguee.css'
-import logo from '../resources/SEP.png'
+import React from 'react'
+import '../themes/logister.css'
+import LogInEmail from '../functions/logIn_Email'
+import LogInGoogle from '../functions/LogIn_Google'
 
 
-function Loguee() {
+function Loguee(props) {
 
-  const [user, setuser] = useState()
-  const [pass, setpass] = useState()
+  const SubmitLogin = async(e) =>{
+    e.preventDefault()
+    const Email = e.target.email.value
+    const pass = e.target.pass.value
+    await LogInEmail(Email, pass)
+  }
+
+  const SwitchRegist = () =>{
+    props.setLogeando(false)
+  }
     
   return (
     <div className='container-loguee'>
       <div className='head-loguee'>
-        <p>Bienvenido</p>
-        <div className='cont-img'>
-            <img className='logo-img' src={logo} />
-        </div>
+        <p>Iniciar sesion</p>
       </div>
-      <form className='form-loguee'>
-        <input className='in-loguee' type='text' placeholder='Usuario' onChange={(e) => setuser(e.target.value)}></input>
-        <input className='in-loguee' type='password' placeholder='Contraseña' onChange={(e) => setpass(e.target.value)}></input>
+      <form className='form-loguee' onSubmit={SubmitLogin}>
+        <input id='email' className='in-loguee' type='text' placeholder='Usuario'></input>
+        <input id='pass' className='in-loguee' type='password' placeholder='Contraseña'></input>
         <div className='foot-loguee'>
-          <div></div>
-          <div className='btn-loguee'><button className='btnIn' type='submit'>Iniciar Sesión</button></div>
+        <button className='btnIn' type='submit'>Acceder</button>
+          <button className='btnGoog' onClick={() => LogInGoogle()}>Accede con Google</button>
+          <div className='switchi' onClick={() => SwitchRegist()}>No tienes cuenta? Registrate</div>
         </div>
       </form>
 

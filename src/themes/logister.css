@@ -1,10 +1,11 @@
+
 .container-loguee{
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
-    background-color: wheat;
+    background-color: #7c594c;
     padding: 5% 0% 5% 0%;
     border-radius: 30px;
 
@@ -16,7 +17,7 @@
     margin-bottom:40px;
 }
 .head-loguee{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -25,13 +26,11 @@
     align-items: center;
 }
 .foot-loguee{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    padding-left: 25px;
-    padding-right: 25px;
-    align-items: center;
+    
 }
 .btn-loguee{
     width: 30%;
@@ -43,6 +42,13 @@
     font-weight: bold;
 }
 .btnIn{
+    width: 100%;
+    color: white;
+    background-color: darkcyan;
+    border-radius: 10px;
+    border: none;
+}
+.btnGoog{
     width: 100%;
     color: white;
     background-color: darkcyan;
@@ -61,7 +67,7 @@
 }
 
 .container-loguee input{
-        margin-bottom: 5%;
+    margin-bottom: 5%;
     margin-left: 15%;
     width: 60%;
     height: 25%;
@@ -76,7 +82,7 @@
 .form-loguee{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
 }
 .in-loguee{
     border-radius: 5px;
@@ -86,4 +92,13 @@
 }
 .logo-img{
     height: 35px;
+}
+.Logeando{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.switchi{
+    font-size: 16px;
+    cursor: pointer;
 }
