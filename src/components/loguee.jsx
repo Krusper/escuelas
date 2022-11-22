@@ -26,9 +26,9 @@ function Loguee(props) {
         <input id='email' className='in-loguee' type='text' placeholder='Usuario'></input>
         <input id='pass' className='in-loguee' type='password' placeholder='Contraseña'></input>
         <div className='foot-loguee'>
+          <div className='switchi' onClick={() => SwitchRegist()}>No tienes cuenta? Crea una</div>
         <button className='btnIn' type='submit'>Acceder</button>
           <button className='btnGoog' onClick={() => LogInGoogle()}>Accede con Google</button>
-          <div className='switchi' onClick={() => SwitchRegist()}>No tienes cuenta? Registrate</div>
         </div>
       </form>
 

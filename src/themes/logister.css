@@ -32,28 +32,39 @@
     justify-content: space-around;
     
 }
-.btn-loguee{
-    width: 30%;
+.btn-regist{
+    width: 80%;
+    align-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1px;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 .btnIn{
-    width: 100%;
+    width: 90%;
     color: white;
     background-color: darkcyan;
     border-radius: 10px;
     border: none;
+    font-size: 20px;
+    height: 40px;
+    margin-bottom: 5%;
+    align-self: center;
+    cursor: pointer;
 }
 .btnGoog{
-    width: 100%;
+    width: 90%;
     color: white;
     background-color: darkcyan;
     border-radius: 10px;
     border: none;
+    font-size: 20px;
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
 }
 .cont-img{
     background-color: white;
@@ -67,18 +78,17 @@
 }
 
 .container-loguee input{
-    margin-bottom: 5%;
-    margin-left: 15%;
-    width: 60%;
-    height: 25%;
+    margin-top: 5%;
+    width: 80%;
+    align-self: center;
 }
-.container-loguee button{
+/* .container-loguee button{
     margin-top: 5%;
     height: 55px;
     width: 145px;
     font-size: 16px;
     font-weight: bold;
-}
+} */
 .form-loguee{
     display: flex;
     flex-direction: column;
@@ -87,7 +97,6 @@
 .in-loguee{
     border-radius: 5px;
     border: none;
-    margin-left: 15%;
     padding: 8px;
 }
 .logo-img{
@@ -101,4 +110,7 @@
 .switchi{
     font-size: 16px;
     cursor: pointer;
+    margin-top: 0%;
+    margin-top: 2%;
+    margin-bottom: 8%;
 }

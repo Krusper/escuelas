@@ -32,7 +32,7 @@ function Regist(props) {
         
         <div className='foot-loguee'>
           <div className='switchi' onClick={() => SwitchLoguee()}>Ya tienes cuenta? Inicia sesion</div>
-          <div className='btn-loguee'><button className='btnIn' type='submit'>Registrarse</button></div>
+          <div className='btn-regist'><button className='btnIn' type='submit'>Registrarse</button></div>
         </div>
 
       </form>
