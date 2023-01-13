@@ -10,6 +10,7 @@ function Regist(props) {
     e.preventDefault()
     const Email = e.target.email.value
     const pass = e.target.pass.value
+    console.log(Email, pass)
     await RegisterUser(Email, pass)
   }
 
@@ -25,10 +26,10 @@ function Regist(props) {
       </div>
 
       <form className='form-loguee' onSubmit={SubmitRegist}>
-        <input id='pass' className='in-loguee' type='text' placeholder='Nombre de usuario'></input>
+        <input id='username' className='in-loguee' type='text' placeholder='Nombre de usuario'></input>
         <input id='email' className='in-loguee' type='text' placeholder='Correo'></input>
         <input id='pass' className='in-loguee' type='password' placeholder='Contraseña'></input>
-        <input id='pass' className='in-loguee' type='password' placeholder='Confirmar contraseña'></input>
+        <input id='confirmpass' className='in-loguee' type='password' placeholder='Confirmar contraseña'></input>
         
         <div className='foot-loguee'>
           <div className='switchi' onClick={() => SwitchLoguee()}>Ya tienes cuenta? Inicia sesion</div>

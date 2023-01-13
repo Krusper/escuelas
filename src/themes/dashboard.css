@@ -1,0 +1,27 @@
+.btn-corte_mensual{
+    padding: 5px;
+    background: #008B8B;
+    max-width: 12%;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+.btn-informe{
+    padding: 5px;
+    background: #008B8B;
+    max-width: 8%;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+.txt-btn{
+    color: white;
+    font-weight: bold;
+}
+
+.btn-LogOut{
+    margin-top: 2%;
+    margin-left: 3%;
+}

@@ -23,7 +23,7 @@ function Loguee(props) {
         <p>Iniciar sesion</p>
       </div>
       <form className='form-loguee' onSubmit={SubmitLogin}>
-        <input id='email' className='in-loguee' type='text' placeholder='Usuario'></input>
+        <input id='email' className='in-loguee' type='text' placeholder='Correo'></input>
         <input id='pass' className='in-loguee' type='password' placeholder='Contraseña'></input>
         <div className='foot-loguee'>
           <div className='switchi' onClick={() => SwitchRegist()}>No tienes cuenta? Crea una</div>

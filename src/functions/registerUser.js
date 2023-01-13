@@ -6,6 +6,6 @@ export default async function RegisterUser(email, password){
         const user = await createUserWithEmailAndPassword(auth, email, password)
         console.log(user)
     } catch (err) {
-        console.log(err)
+        console.log(err,'err')
     }
 }
