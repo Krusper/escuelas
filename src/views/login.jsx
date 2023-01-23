@@ -23,11 +23,12 @@ function Login(){
       <div className='body'>
         <section className='seccion-inicio'>
           <div></div>
-          <div className='component-loguee'>{Logeando ? <Loguee setLogeando={setLogeando}/> : <Regist setLogeando={setLogeando}/>}</div>
+          <div className='component-loguee'>  {Logeando ? <Loguee setLogeando={setLogeando}/> : <Regist setLogeando={setLogeando}/>}  </div>
         </section>
 
       </div>
     </div>
+    
     }
     </>
   )

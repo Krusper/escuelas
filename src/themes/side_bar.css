@@ -1,0 +1,34 @@
+.side_bar {
+    width: 160px;
+    height: 754px;
+    background-color: rgba(243, 224, 173, 1);
+    
+}
+
+.btnCut {
+    width: 90%;
+    font-weight: bold;
+    font-size: small;
+    margin-top: 200px;
+    margin-left: 10px;
+    height: 150px;
+    text-align: center;
+    background-color: rgba(243, 224, 173, 1);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.btnInf {
+    width: 90%;
+    font-weight: bold;
+    font-size: small;
+    margin-top: 40px;
+    margin-left: 10px;
+    height: 150px;
+    text-align: center;
+    background-color: rgba(243, 224, 173, 1);
+    border: none;
+    cursor: pointer;
+}
