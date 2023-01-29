@@ -1,9 +1,16 @@
 import React from 'react'
+import Side_bar from '../components/side_bar'
+import Header from '../components/header'
+import styled from 'styled-components'
 
-function Corte_mensual() {
+function CorteMes() {
+
   return (
+
     <div>Corte_mensual</div>
+
+
   )
 }
 
-export default Corte_mensual
+export default CorteMes

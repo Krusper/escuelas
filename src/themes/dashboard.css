@@ -25,3 +25,25 @@
     margin-top: 2%;
     margin-left: 3%;
 }
+
+.btnAccept{
+    background-color:rgba(62, 137, 101, 1);
+    width: 180px;
+    height: 45px;
+    border-radius: 10px;
+    border: black;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium';
+    cursor: pointer;
+}
+
+.btnCancel{
+    background-color: red;
+    width: 180px;
+    height: 45px;
+    border-radius: 10px;
+    border: black;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium';
+    cursor: pointer;
+}
