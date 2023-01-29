@@ -13,8 +13,8 @@ const Home = () =>{
   
   return (
     <div className='dashboard-containt'>
-      <Header></Header>
-      <Side_bar></Side_bar>
+      {/* <Header></Header> */}
+      {/* <Side_bar></Side_bar> */}
       <div className='dash-body'>
 
 
@@ -30,8 +30,8 @@ const Home = () =>{
       </div>
       <div className='btn-informe'>
         <p className='txt-btn'>Crear informe</p>
-      </div>
-      <button className='btn-LogOut' onClick={LogOut}>Log Out</button> */}
+      </div>*/}
+      <button className='btn-LogOut' onClick={LogOut}>Log Out</button> 
 
     </div>
   )
