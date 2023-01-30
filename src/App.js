@@ -1,11 +1,4 @@
-import React, {useState, useContext} from "react";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "./firebase/credenciales";
-import {BrowserRouter,Routes,Route} from "react-router-dom";
-
-import Login from "./views/login";
-import Dashboard from "./views/dashboard"
-import CorteMes from './components/corte_mensual'
+import React from "react";
 import Navigation from "./routes/navigation";
 
 function App() {

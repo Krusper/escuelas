@@ -11,7 +11,6 @@ function Login(){
 
   const handlerLogeando = (data) =>{
 
-    console.log('entro')
     setLogeando(!data)
   }
   

@@ -2,10 +2,12 @@ import React from 'react'
 import '../themes/logister.css'
 import LogInEmail from '../functions/logIn_Email'
 import LogInGoogle from '../functions/LogIn_Google'
+import { useNavigate } from 'react-router-dom'
 
 
 function Loguee(props) {
 
+  const navigate = useNavigate()
   const SubmitLogin = async(e) =>{
     e.preventDefault()
     const Email = e.target.email.value

@@ -1,21 +1,18 @@
 import React from 'react'
-import { HashRouter as Router, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Regist from '../components/Regist'
 import Login from '../views/login'
 import Dashboard from '../views/dashboard'
-import CorteMes from '../components/corte_mensual'
+import CorteMes from '../components/CorteMes'
 import PrivateRoute from './privateRoute'
 
 
 
 function Navigation() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-
         <Route path='/login' element={<Login/>}/>
-        
-        <Route path='/registrarse' element={<Regist/>}/>
 
         <Route exact path='/' element={
           <PrivateRoute>
@@ -23,16 +20,14 @@ function Navigation() {
           </PrivateRoute>
         }/>
 
-
-
-          <Route path='/corteMensual' element={
-            <PrivateRoute>
-              <CorteMes/>
-            </PrivateRoute>
-          }/>
+        <Route path='/cortes' element={
+          <PrivateRoute>
+            <CorteMes/>
+          </PrivateRoute>
+        }/>
 
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 

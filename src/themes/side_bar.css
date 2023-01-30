@@ -1,32 +1,17 @@
 .side_bar {
-    width: 160px;
-    height: 754px;
+    width: 10%;
+    height: 90vh;
     background-color: rgba(243, 224, 173, 1);
+    overflow:hidden;
     
 }
-
-.btnCut {
-    width: 90%;
-    font-weight: bold;
-    font-size: small;
-    margin-top: 200px;
-    margin-left: 10px;
-    height: 150px;
-    text-align: center;
-    background-color: rgba(243, 224, 173, 1);
-    border: none;
-    cursor: pointer;
-}
-
-.btnInf {
-    width: 90%;
-    font-weight: bold;
-    font-size: small;
-    margin-top: 40px;
-    margin-left: 10px;
-    height: 150px;
-    text-align: center;
-    background-color: rgba(243, 224, 173, 1);
-    border: none;
-    cursor: pointer;
+.btn-redirect{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    font-size: medium;
+    font-weight: bold;  
+    
 }
