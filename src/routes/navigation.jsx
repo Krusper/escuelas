@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
-import Regist from '../components/Regist'
 import Login from '../views/login'
 import Dashboard from '../views/dashboard'
 import CorteMes from '../components/CorteMes'
