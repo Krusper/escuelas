@@ -1,24 +1,21 @@
-import React, {useState} from 'react'
-import { Navigate, useNavigate } from 'react-router-dom'
+import React, { useState } from 'react'
 import Header from '../components/header'
 import Side_bar from '../components/side_bar'
-import { onAuthStateChanged } from "firebase/auth";
-import LogOut from '../functions/logOut';
-import {useAuthState} from 'firebase/auth'
-import { auth } from '../firebase/credenciales';
+import { auth } from '../firebase/credenciales'
+import { Navigate } from 'react-router'
 
 function PrivateRoute({children}) {
 
-  const navigate = useNavigate()
+  const [User, setUser] = useState()
 
-  setTimeout (() => {
-    console.log(auth.currentUser);  
-    if (!auth.currentUser) {
-      return <Navigate to='/login'/>
-    }
-  }, 2000)
+  auth.onAuthStateChanged(user => {
+    setUser(user || null);
+  });
 
-  
+  if(User === null){
+    return <Navigate to='/login'/>;
+  }
+
   return (
 
     <>

@@ -1,0 +1,21 @@
+.table {
+    background-color: rgb(206, 188, 164);
+    width: 1220px;
+    height: 500px;
+    align-items: center;
+}
+
+.corteTabla {
+    background-color: rgb(228, 228, 188);
+    width: 1200;
+    height: 80;
+    align-items: flex;
+    flex-direction: row;
+    margin-top: 26px;
+
+}
+
+.p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}

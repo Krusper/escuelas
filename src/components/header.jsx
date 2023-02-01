@@ -12,7 +12,7 @@ function Header() {
     <div className='header'>
 
       <div className='Home' style={{userSelect: 'none', cursor: 'pointer'}} onClick={() =>GoHome()}>
-        Home
+        Nombre de usuario
       </div>  
     </div>
    

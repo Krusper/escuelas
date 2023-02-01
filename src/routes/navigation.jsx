@@ -12,7 +12,6 @@ function Navigation() {
     <BrowserRouter>
       <Routes>
         <Route path='/login' element={<Login/>}/>
-
         <Route exact path='/' element={
           <PrivateRoute>
             <Dashboard/>
