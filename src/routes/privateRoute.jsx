@@ -6,11 +6,12 @@ import { Navigate } from 'react-router'
 
 function PrivateRoute({children}) {
 
-  const [User, setUser] = useState()
+  const [User, setUser] = useState();
+  if(User === undefined){
+    auth.onAuthStateChanged(user => {
 
-  auth.onAuthStateChanged(user => {
-    setUser(user || null);
-  });
+    });
+  }
 
   if(User === null){
     return <Navigate to='/login'/>;
