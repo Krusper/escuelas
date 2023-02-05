@@ -1,11 +1,11 @@
-import React from 'react'
-import '../themes/CorteMes.css'
+import React from "react"
+import Header from './header'
 import DataTable from 'react-data-table-component'
 import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
 import Button from '@mui/material/Button'
 
-function CorteMes() {
+function InformeMes() {
   
   const columns = [
     {
@@ -29,7 +29,7 @@ function CorteMes() {
       selector: row => row.total,
     },
   ];  
-
+  
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
       setOpen(true);
@@ -40,40 +40,40 @@ function CorteMes() {
   };
 
   const estilo = {
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      width: 800,
-      bgcolor: 'background.paper',
-      border: '2px solid #000',
-      boxShadow: 24,
-      p: 4,
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 800,
+    heigh: 100,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
   };
 
   return (
 
-    <div >
-      
+    <div>
       <Button className='createCorte' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
-          CREAR NUEVO
+            CREAR NUEVO
       </Button>
+
       <Modal
         open={open}
         onClose={handleClose}
       > 
         <Box sx={estilo}>
-         <p>HOLA MUNDO</p>
+          <p>HOLA MUNDO</p>
         </Box> 
 
       </Modal>
-
+    
       <DataTable
         columns={columns} 
       />
     </div>
-    
   );
 }
-
-export default CorteMes
+  
+export default InformeMes

@@ -4,8 +4,7 @@ import Login from '../views/login'
 import Dashboard from '../views/dashboard'
 import CorteMes from '../components/CorteMes'
 import PrivateRoute from './privateRoute'
-
-
+import InformeMes from '../components/informeMes'
 
 function Navigation() {
   return (
@@ -21,6 +20,12 @@ function Navigation() {
         <Route path='/cortes' element={
           <PrivateRoute>
             <CorteMes/>
+          </PrivateRoute>
+        }/>
+
+        <Route path='/informes' element={
+          <PrivateRoute>
+            <InformeMes/>
           </PrivateRoute>
         }/>
 
