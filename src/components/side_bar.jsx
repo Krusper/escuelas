@@ -26,28 +26,13 @@ function Side_bar() {
 
       <div className='btn-redirect' onClick={()=>GoCorte()}>
          <img src={corte} />
-         <p>Corte mensual</p>
+         <p>Movimientos</p>
       </div>
 
       <div className='btn-redirect' onClick={()=>GoInforme()}>
          <img src={docu} />
          <p>Informe semestral</p>
       </div>
-
-      {/* <button className='btnCut'>
-         
-         <img src= {corte}></img>
-         <p>CORTE MENSUAL</p>
-          
-      </button>
-
-      <button className='btnInf'>
-
-         <img src= {docu}></img>
-         <p>INFORME MENSUAL</p>
-
-      
-      </button> */}
    </div>
       
     

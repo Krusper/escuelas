@@ -3,7 +3,8 @@ import '../themes/CorteMes.css'
 import DataTable from 'react-data-table-component'
 import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
-import Button from '@mui/material/Button'
+import Vmodal from '../components/modal'
+
 
 function CorteMes() {
   
@@ -17,18 +18,30 @@ function CorteMes() {
         selector: row => row.fecha,
     },
     {
-        name: 'Ingresos',
-        selector: row => row.ingreso,
+        name: 'Tipo de movimiento',
+        selector: row => row.tipoMov,
     },
     {
-        name: 'Egresos',
-        selector: row => row.egreso,
+        name: 'Monto',
+        selector: row => row.monto,
     },
     {
-      name: 'Total',
-      selector: row => row.total,
+      grow: 4,
+      name: 'Concepto',
+      selector: row => row.concepto,
     },
   ];  
+
+  const data = [
+    {
+      id: 1,
+      fecha: '15-02-2012',
+      tipoMov: 'Ingreso',
+      monto: '2345',
+      concepto: 'Cuota padres de familia',
+    },
+  ];
+  
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
@@ -44,7 +57,7 @@ function CorteMes() {
       top: '50%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      width: 800,
+      width: 400,
       bgcolor: 'background.paper',
       border: '2px solid #000',
       boxShadow: 24,
@@ -54,23 +67,29 @@ function CorteMes() {
   return (
 
     <div >
+
+      <div className='btn'>
+        <button className='createCorte' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
+          <p>AÑADIR NUEVO</p>
+        </button>
+      </div>
       
-      <Button className='createCorte' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
-          CREAR NUEVO
-      </Button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-      > 
-        <Box sx={estilo}>
-         <p>HOLA MUNDO</p>
-        </Box> 
+      <div className='table'>
+        <Modal
+          open={open}
+          onClose={handleClose}
+        > 
+          <Box sx={estilo}>
+            <Vmodal></Vmodal>
+          </Box> 
 
-      </Modal>
+        </Modal>
 
-      <DataTable
-        columns={columns} 
-      />
+        <DataTable
+          columns={columns} 
+          data={data}
+        />
+      </div>
     </div>
     
   );

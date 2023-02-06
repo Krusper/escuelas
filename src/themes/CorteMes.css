@@ -1,21 +1,13 @@
-.table {
-    background-color: rgb(206, 188, 164);
-    width: 1220px;
-    height: 500px;
-    align-items: center;
+.btn {
+    display: flex;
+    justify-content: left;
 }
-
-.corteTabla {
-    background-color: rgb(228, 228, 188);
-    width: 1200;
-    height: 80;
-    align-items: flex;
-    flex-direction: row;
-    margin-top: 26px;
-
-}
-
-.p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+.createCorte {
+    width: 140px;
+    height: 55px; 
+    background-color: rgb(255, 208, 0);
+    font-family: 'Franklin Gothic Medium';
+    border-radius: 10px;
+    font-size: large;
+    margin-top: 14px;
 }

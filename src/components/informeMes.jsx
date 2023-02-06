@@ -1,9 +1,8 @@
 import React from "react"
-import Header from './header'
 import DataTable from 'react-data-table-component'
 import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
-import Button from '@mui/material/Button'
+import ModalInf from "../components/modalInf"
 
 function InformeMes() {
   
@@ -29,7 +28,18 @@ function InformeMes() {
       selector: row => row.total,
     },
   ];  
-  
+
+
+  const data =[
+    {
+      id: 1,
+      fecha: '15-05-2022',
+      ingreso: '540',
+      egreso: '354',
+      total: '186',
+    },
+  ];
+
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
       setOpen(true);
@@ -55,22 +65,23 @@ function InformeMes() {
   return (
 
     <div>
-      <Button className='createCorte' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
+      <button className='createCorte' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
             CREAR NUEVO
-      </Button>
+      </button>
 
       <Modal
         open={open}
         onClose={handleClose}
       > 
         <Box sx={estilo}>
-          <p>HOLA MUNDO</p>
+          <ModalInf></ModalInf>
         </Box> 
 
       </Modal>
     
       <DataTable
         columns={columns} 
+        data={data}
       />
     </div>
   );
