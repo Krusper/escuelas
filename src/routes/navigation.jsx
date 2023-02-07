@@ -5,6 +5,7 @@ import Dashboard from '../views/dashboard'
 import CorteMes from '../components/CorteMes'
 import PrivateRoute from './privateRoute'
 import InformeMes from '../components/informeMes'
+import Test from '../components/Test'
 
 function Navigation() {
   return (
@@ -26,6 +27,12 @@ function Navigation() {
         <Route path='/informes' element={
           <PrivateRoute>
             <InformeMes/>
+          </PrivateRoute>
+        }/>
+
+        <Route path='/test' element={
+          <PrivateRoute>
+            <Test/>
           </PrivateRoute>
         }/>
 

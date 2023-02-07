@@ -11,10 +11,15 @@ function Dashboard() {
     navigate('/cortemes')
     alert('xd')
   }
+  const GoTest = () =>{
+    navigate('/test')
+  }
 
   return (
     <div className='dash-body'>
      <p>Holo</p>
+
+     <button onClick={()=>GoTest()}>Test</button>
     </div>
   )
 }
