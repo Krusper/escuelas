@@ -20,7 +20,7 @@ function CorteMes() {
   const axget = async()=>{
     var config = {
         method: 'get',
-        url: `http://localhost:9000/movimiento?fechaInicio=2023-02-01&fechaFin=2023-02-28`,
+        url: `http://localhost:9000/movimiento/corte?fechaInicio=2023-02-01&fechaFin=2023-02-28`,
       };
       await axios(config)
       .then(function (response) {

@@ -26,7 +26,7 @@ function Vmodal(props) {
 
     var config = {
       method: 'post',
-      url: 'http://localhost:9000/movimiento',
+      url: 'http://localhost:9000/movimiento/add',
       headers: { 
         'Content-Type': 'application/json',
       },

@@ -18,7 +18,7 @@ export default function Test() {
   
         var config = {
           method: 'post',
-          url: 'http://localhost:9000/movimiento',
+          url: 'http://localhost:9000/movimiento/add',
           headers: { 
             'Content-Type': 'application/json',
           },
@@ -36,7 +36,7 @@ export default function Test() {
     const axget = async()=>{
         var config = {
             method: 'get',
-            url: 'http://localhost:9000/movimiento?fechaInicio=2023-02-01&fechaFin=2023-02-28',
+            url: 'http://localhost:9000/movimiento/corte?fechaInicio=2023-02-01&fechaFin=2023-02-28',
           };
           await axios(config)
           .then(function (response) {
