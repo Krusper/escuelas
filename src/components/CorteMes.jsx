@@ -1,34 +1,63 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../themes/CorteMes.css'
 import DataTable from 'react-data-table-component'
 import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
 import Vmodal from '../components/modal'
+import axios from 'axios'
 
 
 function CorteMes() {
+
+  useEffect(() => {
+    axget()
+  }, []);
+
+  const [ResAx, setResAx] = useState();
+  const [Fch_Inicio, setFch_Inicio] = useState('2023-02-01');
+  const [Fch_Fin, setFch_Fin] = useState('2023-02-28')
+  
+  const axget = async()=>{
+    var config = {
+        method: 'get',
+        url: `http://localhost:9000/movimiento?fechaInicio=2023-02-01&fechaFin=2023-02-28`,
+      };
+      await axios(config)
+      .then(function (response) {
+        console.log(response)
+        setResAx(response.data.movimientos)
+        console.log(response.data.movimientos);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
   
   const columns = [
     {
-        name: 'No.',
-        selector: row => row.id,
+        grow: 0.1,
+        name: 'ID',
+        selector: row => row.ID,
     },
     {
+        grow: 1,
         name: 'Fecha',
-        selector: row => row.fecha,
+        selector: row => row.Fecha.slice(0, -14),
     },
     {
-        name: 'Tipo de movimiento',
-        selector: row => row.tipoMov,
+        grow: 1,
+        name: 'Tipo',
+        selector: row => row.Tipo === 1 ? 'Ingreso' : 'Egreso',
     },
     {
+      grow: 1,
         name: 'Monto',
-        selector: row => row.monto,
+        selector: row => row.Importe,
     },
     {
-      grow: 4,
+      grow: 10,
       name: 'Concepto',
-      selector: row => row.concepto,
+      selector: row => row.Concepto,
     },
   ];  
 
@@ -51,6 +80,7 @@ function CorteMes() {
 
   const handleClose = () => {
       setOpen(false);
+      axget()
   };
 
   const estilo = {
@@ -89,7 +119,7 @@ function CorteMes() {
       <div className='table'>
         <DataTable
           columns={columns} 
-          data={data}
+          data={ResAx}
         />
       </div>
     </div>
