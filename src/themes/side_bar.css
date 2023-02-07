@@ -1,8 +1,8 @@
 .side_bar {
     width: 13%;
-    height: 90vh;
+    min-height: 90vh;
     background-color: rgba(243, 224, 173, 1);
-    overflow:hidden;
+    /* overflow:hidden; */
     
 }
 .btn-redirect{
@@ -13,5 +13,10 @@
     padding-top: 10px;
     font-size: medium;
     font-weight: bold;  
+    cursor: pointer;
     
+}
+.table{
+    margin-bottom: 30px;
+
 }

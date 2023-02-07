@@ -17,9 +17,9 @@ function Dashboard() {
 
   return (
     <div className='dash-body'>
-     <p>Holo</p>
+     <p style={{marginLeft:'20px'}}>Bienvenido</p>
 
-     <button onClick={()=>GoTest()}>Test</button>
+     {/* <button onClick={()=>GoTest()}>Test</button> */}
     </div>
   )
 }

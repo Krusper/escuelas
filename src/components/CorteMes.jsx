@@ -5,6 +5,7 @@ import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
 import Vmodal from '../components/modal'
 import axios from 'axios'
+import moment from 'moment/moment'
 
 
 function CorteMes() {
@@ -14,13 +15,13 @@ function CorteMes() {
   }, []);
 
   const [ResAx, setResAx] = useState();
-  const [Fch_Inicio, setFch_Inicio] = useState('2023-02-01');
-  const [Fch_Fin, setFch_Fin] = useState('2023-02-28')
+  const [Fch_Inicio, setFch_Inicio] = useState();
+  const [Fch_Fin, setFch_Fin] = useState()
   
   const axget = async()=>{
     var config = {
         method: 'get',
-        url: `http://localhost:9000/movimiento/corte?fechaInicio=2023-02-01&fechaFin=2023-02-28`,
+        url: `http://localhost:9000/movimiento/corte?fechaInicio=${Fch_Inicio}&fechaFin=${Fch_Fin}`,
       };
       await axios(config)
       .then(function (response) {
@@ -100,10 +101,18 @@ function CorteMes() {
 
     <div >
 
-      <div className='btn'>
-        <button className='createCorte' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
-          <p>AÑADIR NUEVO</p>
-        </button>
+
+      <div className='filtros'>
+        
+        <p className='intxt'>Fecha Inicial</p>
+        <input className='infhc' type="date" value={Fch_Inicio} onChange={(e) => setFch_Inicio(e.target.value)} min="2000-01-01" max="2040-12-31"></input>
+        
+        <p className='intxt'>Fecha Final</p>
+        <input className='infhc' type="date" value={Fch_Fin} onChange={(e) => setFch_Fin(e.target.value)} min="2000-01-01" max="2040-12-31"></input>
+
+        
+        <button className='btn-corte' onClick={() => axget()} style={{userSelect: 'none', cursor: 'pointer'}}>Buscar</button>
+        <button className='btn-corte' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer', marginLeft:'40px'}}>Añadir movimiento</button>
       </div>
       
       <div className='modal' >

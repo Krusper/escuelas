@@ -26,7 +26,7 @@ function PrivateRoute({children}) {
         
       <div className='Container_body' style={{display: 'flex', flexDirection: 'row'}}>
         <Side_bar></Side_bar>
-        <div className='body'> {children} </div>
+        <div className='body' style={{width:'100%'}}> {children} </div>
       </div>
       
     </div> 

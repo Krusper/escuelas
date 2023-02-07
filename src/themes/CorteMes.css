@@ -1,6 +1,7 @@
 .btn {
     display: flex;
-    justify-content: left;
+    justify-content: right;
+    margin-right: 20%;
 }
 .createCorte {
     width: 140px;
@@ -10,4 +11,52 @@
     border-radius: 10px;
     font-size: large;
     margin-top: 14px;
+}
+
+.sc-jrcTuL.dwPlXY.rdt_TableRow{
+    background-color: lightgrey;
+}
+.sc-dkrFOg.iSAVrt.rdt_TableHeadRow{
+    background: gray;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.sc-bcXHqe.kVrXuC.rdt_Table{
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 2%;
+  
+}   
+.filtros{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+.infhc{
+    height: 24px;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 4px;
+    background: #e8e8e8;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.intxt{
+    font-size: 20px;
+    font-weight: bold;
+    color: #323232;
+}
+.btn-corte{
+    align-self: center;
+    padding: 10px;
+    background: #f7e087;
+    border-radius: 10px;
+    border: 1px solid #4d4d4d;
+    color: #3c3c3c;
+    font-size: 16px;
+    font-weight: bold;
 }
