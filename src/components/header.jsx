@@ -10,10 +10,9 @@ function Header() {
   return (
 
     <div className='header'>
-
-      <div className='Home' style={{userSelect: 'none', cursor: 'pointer'}} onClick={() =>GoHome()}>
-        Nombre de usuario
-      </div>  
+        <button className='Home' style={{userSelect: 'none', cursor: 'pointer'}} onClick={() =>GoHome()}>
+          NOMBRE DE USUARIO
+        </button>
     </div>
    
   )

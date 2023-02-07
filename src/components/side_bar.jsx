@@ -31,7 +31,7 @@ function Side_bar() {
 
       <div className='btn-redirect' onClick={()=>GoInforme()}>
          <img src={docu} />
-         <p>Informe semestral</p>
+         <p>Informes</p>
       </div>
    </div>
       

@@ -25,6 +25,12 @@
 }
 
 .btncontainer {
+    padding: 44px;
     display: flex;
     justify-content: space-between;
+    
+}
+
+.input {
+    display: initial;
 }

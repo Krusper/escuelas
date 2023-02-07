@@ -7,3 +7,12 @@
     font-size: large;
     margin-top: 14px;
 }
+
+.informes {
+    display: flex;
+    flex-direction: row;
+}
+
+.Tableheadrow {
+    background-color: aqua;
+}

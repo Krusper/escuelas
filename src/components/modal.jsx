@@ -57,7 +57,7 @@ function Vmodal(props) {
           FECHA : <input type="date" value={date} onChange={(e) => changeDate(e.target.value)} min="2000-01-01" max="2040-12-31"></input>
         </p>
          
-        <p>TIPO MOVIMIENTO :
+        <p>TIPO MOVIMIENTO :      
           <select onChange={(e) => settipoMov(e.target.value)}>
             <option value={1}>INGRESO</option>
             <option value={2}>EGRESO</option>  

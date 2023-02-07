@@ -65,11 +65,12 @@ function InformeMes() {
 
   return (
 
-    <div>
-      <button className='createInfo' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
-            CREAR NUEVO
-      </button>
-
+    <div className="informes">
+      <div className="botns">
+        <button className='createInfo' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
+              CREAR NUEVO
+        </button>
+      </div>
       <Modal
         open={open}
         onClose={handleClose}
