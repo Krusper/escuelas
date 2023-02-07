@@ -3,12 +3,13 @@ import DataTable from 'react-data-table-component'
 import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
 import ModalInf from "../components/modalInf"
+import "../themes/infomes.css"
 
 function InformeMes() {
   
   const columns = [
     {
-        name: 'ID',
+        name: 'No.',
         selector: row => row.id,
     },
     {
@@ -54,8 +55,8 @@ function InformeMes() {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 800,
-    heigh: 100,
+    width: 300,
+    heigh: 300,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -65,7 +66,7 @@ function InformeMes() {
   return (
 
     <div>
-      <button className='createCorte' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
+      <button className='createInfo' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
             CREAR NUEVO
       </button>
 
@@ -74,15 +75,17 @@ function InformeMes() {
         onClose={handleClose}
       > 
         <Box sx={estilo}>
-          <ModalInf></ModalInf>
+          <ModalInf onClose={handleClose}></ModalInf>
         </Box> 
-
+        
       </Modal>
     
-      <DataTable
-        columns={columns} 
-        data={data}
-      />
+      <div className="dataTable">
+        <DataTable
+          columns={columns} 
+          data={data}
+        />
+      </div>
     </div>
   );
 }

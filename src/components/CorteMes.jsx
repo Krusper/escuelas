@@ -10,7 +10,7 @@ function CorteMes() {
   
   const columns = [
     {
-        name: 'ID',
+        name: 'No.',
         selector: row => row.id,
     },
     {
@@ -44,6 +44,7 @@ function CorteMes() {
   
 
   const [open, setOpen] = React.useState(false);
+
   const handleOpen = () => {
       setOpen(true);
   };
@@ -60,7 +61,7 @@ function CorteMes() {
       width: 400,
       bgcolor: 'background.paper',
       border: '2px solid #000',
-      boxShadow: 24,
+      Shadow: 24,
       p: 4,
   };
 
@@ -74,17 +75,18 @@ function CorteMes() {
         </button>
       </div>
       
-      <div className='table'>
+      <div className='modal' >
         <Modal
           open={open}
           onClose={handleClose}
         > 
-          <Box sx={estilo}>
-            <Vmodal></Vmodal>
+          <Box sx={estilo} >
+            <Vmodal onClose={handleClose}></Vmodal>
           </Box> 
-
         </Modal>
+      </div>
 
+      <div className='table'>
         <DataTable
           columns={columns} 
           data={data}

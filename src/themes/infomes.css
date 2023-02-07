@@ -1,8 +1,4 @@
-.btn {
-    display: flex;
-    justify-content: left;
-}
-.createCorte {
+.createInfo {
     width: 140px;
     height: 55px; 
     background-color: rgb(255, 208, 0);
