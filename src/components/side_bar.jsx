@@ -2,16 +2,13 @@ import React, {useState} from 'react'
 import '../themes/side_bar.css'
 import corte from '../resources/corte.svg'
 import docu from '../resources/docu.svg'
-import Corte_mensual from './CorteMes'
 import { useNavigate } from 'react-router-dom'
-
-
-
 
 function Side_bar() {
   const navigate = useNavigate()
 
-  const GoCorte = () =>{
+  const GoCorte = (num) =>{
+
    navigate('/cortes')
   }
   

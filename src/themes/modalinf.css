@@ -1,10 +1,11 @@
 .btns {
     display: flex;
     justify-content: space-between;
+    margin-top: 45px;
 }
 
 .Create {
-    background-color: lightgreen;
+    background-color: #f7e087;
     align-content: center;
     width: 150px;
     height: 40px;
@@ -14,7 +15,7 @@
 }
 
 .Cancel {
-    background-color: lightgreen;
+    background-color: #f7e087;
     align-content: center;
     width: 150px;
     height: 40px;
@@ -25,4 +26,8 @@
 
 .input {
    size: 20px;
+}
+
+.MuiBox-root.css-1tx27gx {
+    background-color: #87f79f;
 }

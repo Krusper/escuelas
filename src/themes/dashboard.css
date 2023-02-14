@@ -1,49 +1,12 @@
-.btn-corte_mensual{
-    padding: 5px;
-    background: #008B8B;
-    max-width: 12%;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 1%;
-    margin-left: 3%;
-}
-.btn-informe{
-    padding: 5px;
-    background: #008B8B;
-    max-width: 8%;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 1%;
-    margin-left: 3%;
-}
-.txt-btn{
-    color: white;
-    font-weight: bold;
+.dash-body {
+    background-image: url('../resources/fondo.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .btn-LogOut{
     margin-top: 2%;
     margin-left: 3%;
-}
-
-.btnAccept{
-    background-color:rgba(62, 137, 101, 1);
-    width: 180px;
-    height: 45px;
-    border-radius: 10px;
-    border: black;
-    font-size: 23px;
-    font-family: 'Franklin Gothic Medium';
-    cursor: pointer;
-}
-
-.btnCancel{
-    background-color: red;
-    width: 180px;
-    height: 45px;
-    border-radius: 10px;
-    border: black;
-    font-size: 23px;
-    font-family: 'Franklin Gothic Medium';
-    cursor: pointer;
 }

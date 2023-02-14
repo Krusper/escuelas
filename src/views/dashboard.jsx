@@ -1,6 +1,5 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-
 import '../themes/dashboard.css'
 // import LogOut from '../functions/logOut'
 
@@ -17,7 +16,6 @@ function Dashboard() {
 
   return (
     <div className='dash-body'>
-     <p style={{marginLeft:'20px'}}>Bienvenido</p>
 
      {/* <button onClick={()=>GoTest()}>Test</button> */}
     </div>

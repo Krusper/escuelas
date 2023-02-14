@@ -1,8 +1,9 @@
 .header { 
-    width: 100%;
+    width: 99.9%;
     height: 80px;
     background-color: rgba(243, 224, 173, 1);
-    
+    display: flex;
+    justify-content: right;
 }
 
 .Home {
@@ -11,4 +12,8 @@
     font-style: normal;
     margin-left: 1200px;
     border-color: rgba(206, 110, 21, 0.79);
+}
+
+.welcome {
+    margin-right: 12px;
 }

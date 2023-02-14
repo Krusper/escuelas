@@ -5,7 +5,6 @@ import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
 import Vmodal from '../components/modal'
 import axios from 'axios'
-import moment from 'moment/moment'
 
 
 function CorteMes() {
@@ -17,11 +16,10 @@ function CorteMes() {
   const [ResAx, setResAx] = useState();
   const [Fch_Inicio, setFch_Inicio] = useState();
   const [Fch_Fin, setFch_Fin] = useState()
-  
   const axget = async()=>{
     var config = {
         method: 'get',
-        url: `http://localhost:9000/movimiento/corte?fechaInicio=${Fch_Inicio}&fechaFin=${Fch_Fin}`,
+        url: `https://us-central1-escuelitas-api.cloudfunctions.net/app/movimiento/corte?fechaInicio=${Fch_Inicio}&fechaFin=${Fch_Fin}`,
       };
       await axios(config)
       .then(function (response) {
@@ -36,27 +34,24 @@ function CorteMes() {
   
   const columns = [
     {
-        grow: 0.1,
         name: 'ID',
         selector: row => row.ID,
     },
     {
-        grow: 1,
         name: 'Fecha',
         selector: row => row.Fecha.slice(0, -14),
     },
     {
-        grow: 1,
         name: 'Tipo',
         selector: row => row.Tipo === 1 ? 'Ingreso' : 'Egreso',
     },
     {
-      grow: 1,
+        
         name: 'Monto',
         selector: row => row.Importe,
     },
     {
-      grow: 10,
+      grow: 1.5,
       name: 'Concepto',
       selector: row => row.Concepto,
     },
@@ -99,7 +94,7 @@ function CorteMes() {
 
   return (
 
-    <div >
+    <div className='fondo'>
 
 
       <div className='filtros'>

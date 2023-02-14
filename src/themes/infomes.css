@@ -1,7 +1,19 @@
+.back{
+    background-image: url('../resources/fondo.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.botns {
+    margin-left: 14px;
+}
+
 .createInfo {
     width: 140px;
     height: 55px; 
-    background-color: rgb(255, 208, 0);
+    background-color:#f7e087;
     font-family: 'Franklin Gothic Medium';
     border-radius: 10px;
     font-size: large;
@@ -13,6 +25,7 @@
     flex-direction: row;
 }
 
-.Tableheadrow {
-    background-color: aqua;
-}
+
+
+
+

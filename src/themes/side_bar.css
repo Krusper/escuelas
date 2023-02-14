@@ -2,7 +2,6 @@
     width: 13%;
     min-height: 90vh;
     background-color: rgba(243, 224, 173, 1);
-    /* overflow:hidden; */
     
 }
 .btn-redirect{
@@ -11,12 +10,18 @@
     display: flex;
     flex-direction: column;
     padding-top: 10px;
-    font-size: medium;
+    font-size: 21px;
     font-weight: bold;  
     cursor: pointer;
     
 }
+
+.btn-redirect:hover {
+    background-color: rgba(233, 199, 108, 0.938);
+    border: 2px solid black;
+}
+
 .table{
     margin-bottom: 30px;
-
 }
+

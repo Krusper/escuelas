@@ -9,9 +9,16 @@ function Header() {
   }
   return (
 
-    <div className='header'>
+    <>
+      <div className='header'>
+        <div className='welcome'>
+          <h1>BIENVENIDO</h1>
+        </div>
+      </div>
       
-    </div>
+        
+
+    </>
    
   )
 }

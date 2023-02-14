@@ -1,45 +1,10 @@
 import React from "react"
-import DataTable from 'react-data-table-component'
 import Box from '@mui/material/Box'
 import Modal from '@mui/material/Modal'
 import ModalInf from "../components/modalInf"
 import "../themes/infomes.css"
 
-function InformeMes() {
-  
-  const columns = [
-    {
-        name: 'No.',
-        selector: row => row.id,
-    },
-    {
-        name: 'Fecha',
-        selector: row => row.fecha,
-    },
-    {
-        name: 'Ingresos',
-        selector: row => row.ingreso,
-    },
-    {
-        name: 'Egresos',
-        selector: row => row.egreso,
-    },
-    {
-      name: 'Total',
-      selector: row => row.total,
-    },
-  ];  
-
-
-  const data =[
-    {
-      id: 1,
-      fecha: '15-05-2022',
-      ingreso: '540',
-      egreso: '354',
-      total: '186',
-    },
-  ];
+function InformeMes() {        
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
@@ -64,28 +29,22 @@ function InformeMes() {
   };
 
   return (
-
-    <div className="informes">
-      <div className="botns">
-        <button className='createInfo' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
-              CREAR NUEVO
-        </button>
-      </div>
-      <Modal
-        open={open}
-        onClose={handleClose}
-      > 
-        <Box sx={estilo}>
-          <ModalInf onClose={handleClose}></ModalInf>
-        </Box> 
-        
-      </Modal>
-    
-      <div className="dataTable">
-        <DataTable
-          columns={columns} 
-          data={data}
-        />
+    <div className="back">
+      <div className="informes">
+        <div className="botns">
+          <button className='createInfo' onClick={handleOpen} style={{userSelect: 'none', cursor: 'pointer'}}>
+                CREAR NUEVO
+          </button>
+        </div>
+        <Modal
+          open={open}
+          onClose={handleClose}
+        > 
+          <Box sx={estilo}>
+            <ModalInf onClose={handleClose}></ModalInf>
+          </Box> 
+          
+        </Modal>
       </div>
     </div>
   );

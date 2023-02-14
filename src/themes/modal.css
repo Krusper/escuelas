@@ -1,6 +1,10 @@
+.container {
+    margin-top: -26px;
+    margin-left: 10px;
+}
 
 .create {
-    background-color: rgb(131, 201, 91);
+    background-color: #f7e087;
     align-content: center;
     width: 150px;
     height: 40px;
@@ -13,8 +17,35 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.fecha {
+    margin-left: 89px;
+    width: 124px;
+    height: 24px;
+    border-radius: 7px;
+}
+
+.selector {
+    margin-left: 9px;
+    width: 90px;
+    height: 29px;
+    background-color: white;
+}
+
+.peso{
+    margin-left: 82px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.concept{
+    margin-left: 56px;
+    width: 201px;
+    height: 59px;
+    border-radius: 8px;
+}
+
 .cancel{
-    background-color: rgb(134, 216, 102);
+    background-color: #f7e087;
     align-content: center;
     width: 150px;
     height: 40px;
@@ -25,7 +56,6 @@
 }
 
 .btncontainer {
-    padding: 44px;
     display: flex;
     justify-content: space-between;
     
@@ -33,4 +63,8 @@
 
 .input {
     display: initial;
+}
+
+.MuiBox-root.css-1tx27gx {
+    background-color: #87f79f;
 }

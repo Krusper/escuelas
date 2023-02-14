@@ -1,3 +1,11 @@
+.fondo {
+    background-image: url('../resources/fondo.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .btn {
     display: flex;
     justify-content: right;
@@ -6,29 +14,44 @@
 .createCorte {
     width: 140px;
     height: 55px; 
-    background-color: rgb(255, 208, 0);
+    background-color: #f7e087;
     font-family: 'Franklin Gothic Medium';
     border-radius: 10px;
     font-size: large;
     margin-top: 14px;
 }
 
+.sc-fLcnxK.dApqnJ {
+    position: fixed;
+    width: 88%;
+    display: table;
+    margin-top: -23px;
+}
+
+.sc-bcXHqe.kVrXuC.rdt_Table{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 4%;
+    height: 141px;
+}   
+
 .sc-jrcTuL.dwPlXY.rdt_TableRow{
     background-color: lightgrey;
+    font-size: medium;
 }
 .sc-dkrFOg.iSAVrt.rdt_TableHeadRow{
     background: gray;
     color: white;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
+    font-size: 29px;
 }
-.sc-bcXHqe.kVrXuC.rdt_Table{
-    width: 50%;
-    margin-left: 10%;
-    margin-top: 2%;
-  
-}   
+
+.sc-hLBbgP.sc-eDvSVe.sc-ipEyDJ.glyQNg.bQdYbR.dlSNBX.rdt_TableCol {
+    display: flex;
+    justify-content: center;
+}
 .filtros{
     display: flex;
     flex-direction: row;
@@ -40,7 +63,7 @@
     margin-left: 10px;
     margin-right: 20px;
     border-radius: 4px;
-    background: #e8e8e8;
+    background: #fff9f9;
     color: black;
     font-size: 16px;
     font-weight: bold;
@@ -60,3 +83,4 @@
     font-size: 16px;
     font-weight: bold;
 }
+

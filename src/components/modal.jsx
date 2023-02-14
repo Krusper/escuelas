@@ -26,7 +26,7 @@ function Vmodal(props) {
 
     var config = {
       method: 'post',
-      url: 'http://localhost:9000/movimiento/add',
+      url: 'https://us-central1-escuelitas-api.cloudfunctions.net/app/movimiento/add',
       headers: { 
         'Content-Type': 'application/json',
       },
@@ -54,23 +54,17 @@ function Vmodal(props) {
   
       <div className='dates'>
         <p>
-          FECHA : <input type="date" value={date} onChange={(e) => changeDate(e.target.value)} min="2000-01-01" max="2040-12-31"></input>
+          FECHA : <input className='fecha' type="date" value={date} onChange={(e) => changeDate(e.target.value)} min="2000-01-01" max="2040-12-31"></input>
         </p>
          
-        <p>TIPO MOVIMIENTO :      
-          <select onChange={(e) => settipoMov(e.target.value)}>
+        <p>TIPO MOVIMIENTO : <select className='selector' onChange={(e) => settipoMov(e.target.value)}>
             <option value={1}>INGRESO</option>
             <option value={2}>EGRESO</option>  
-          </select>
-        </p>
+        </select>
+        </p> 
+        <p>MONTO : <input className='peso' type="text" onChange={(e) => setimporte(e.target.value)}></input></p> 
         
-        <p>MONTO :
-          <input type="text" onChange={(e) => setimporte(e.target.value)}></input>
-        </p>
-        
-        <p>CONCEPTO :
-          <input type="text" onChange={(e) => setconcepto(e.target.value)}></input>
-        </p>
+        <p>CONCEPTO :  <input className='concept' type="text" onChange={(e) => setconcepto(e.target.value)}></input></p> 
       
       
       </div>
